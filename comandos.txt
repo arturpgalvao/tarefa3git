@@ -1,0 +1,25 @@
+git init
+touch arquivo1.txt
+touch arquivo2.txt
+touch arquivo3.txt
+git add arquivo1.txt arquivo2.txt arquivo3.txt
+git commit -m "commit inicial para adicionar os 3 arquivos"
+git add arquivo1.txt arquivo2.txt 
+git commit -m "arquivos 1 e 2 alterados(passo 3)"
+git log
+git log --graph
+git log --oneline 
+git log --decorate
+git revert 15bf3a5
+git add arquivo3.txt
+git stash
+git checkout -b passo6
+git checkout master
+git stash apply
+git add arquivo3.txt
+git commit -m "mensagem temporária salva (passo 6)"
+git reflog
+git tag -a 1.0  c74580e -m "versão estável 1.0 taggeada"
+touch comandos.txt
+git add comandos.txt
+git commit -m "Lista de Comandos Adicionada"
